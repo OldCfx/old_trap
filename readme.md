@@ -144,4 +144,3 @@ Perfect for:
 ---
 
 **Made with ❤️ for the FiveM community**
-```
