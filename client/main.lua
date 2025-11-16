@@ -13,7 +13,7 @@ local function useTrapItem(trapType)
 
 
     if not Config.Traps[trapType] then
-        print('[old_trap] Type de piège invalide: ' .. tostring(trapType))
+        print('Type de piège invalide: ' .. tostring(trapType))
         return false
     end
 
@@ -121,7 +121,7 @@ function createTrapObject(trapId, trapData)
         Wait(10)
     end
 
-    local object = CreateObject(propHash, trapData.coords.x, trapData.coords.y, trapData.coords.z, true, true, false)
+    local object = CreateObject(propHash, trapData.coords.x, trapData.coords.y, trapData.coords.z, false, true, false)
 
     PlaceObjectOnGroundProperly(object)
     FreezeEntityPosition(object, true)
